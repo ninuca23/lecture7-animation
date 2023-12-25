@@ -1,0 +1,114 @@
+body {
+    background-color: rgb(187, 217, 243);
+    overflow: hidden;
+}
+
+
+.mainimg {
+    background-color: rgb(232, 232, 232);
+    background-image: url(/images/realistic-snowfall-wallpaper-concept_23-2148387246.avif);
+    background-repeat: no-repeat;
+    background-size:  cover;
+    height: 700px;
+    width: 1140px;
+    position: relative;
+    margin: 35px auto;
+    overflow-x: hidden;
+    box-shadow: 1px 3px 15px 10px rgb(149, 149, 149);
+}
+
+.snowflake img {
+    position: absolute;
+    top: -100px;
+    width: 200px;
+    animation: fall 5s infinite;
+}
+
+
+
+@keyframes fall {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(700px);
+    }
+}
+
+
+.tree img {
+    height: 550px;
+    position: absolute;
+    left: 35%;
+    top: 100px;
+    z-index: 5;
+    /* animation: moveAround 5s linear infinite; */
+}
+
+
+
+.star img {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    left: 43.3%;
+    top: 25px;
+    animation: star 3s infinite; 
+    z-index: 7;
+}
+
+
+@keyframes star {
+    0% {
+        filter:hue-rotate(0deg);
+    }
+    100% {
+        filter: hue-rotate(360deg);
+    }
+}
+
+
+.santa img {
+    position: absolute;
+    width: 300px;
+    bottom: 400px;
+    left: 0;
+    animation: santamoving 10s  linear infinite;
+}
+
+
+
+
+@keyframes santamoving {
+    0% {transform: translatex(-500px);
+    }
+    25% {transform: translatey(-100px);
+    }
+
+    50% {transform: translatex(500px) translateY(200px);
+    }
+
+    75% {transform: translatex(1000px);
+    }
+
+    100% {transform: translatex(1500px);
+    }
+}
+
+.whitebox img {
+    position: absolute;
+    width: 200px;
+    height: 100px;
+    bottom: 20px;
+    left:42%;
+    z-index: 10;
+    animation: movebox 1s infinite;
+    
+}
+
+@keyframes movebox {
+    50%
+    {transform: rotate(10deg);}
+    100% 
+    {transform: translateX(0deg);}
+}
