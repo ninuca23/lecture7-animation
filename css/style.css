@@ -107,6 +107,31 @@ body {
     }
 }
 
+.newyear img {
+    width:150px;
+    position: absolute;
+    top:60px;
+    left:-130px;
+    animation: newyearmove 10s  linear infinite;
+}
+
+
+@keyframes newyearmove {
+    0% {transform: translatex(-500px);
+    }
+    25% {transform: translatey(-100px);
+    }
+
+    50% {transform: translatex(500px) translateY(200px);
+    }
+
+    75% {transform: translatex(1000px);
+    }
+
+    100% {transform: translatex(1500px);
+    }
+}
+
 .whitebox img {
     position: absolute;
     width: 200px;
