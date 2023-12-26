@@ -1,13 +1,14 @@
 body {
     background-color: rgb(187, 217, 243);
     overflow: hidden;
+    
 }
 
  
 
 .mainimg {
     background-color: rgb(232, 232, 232);
-    background-image: url(images/background.jpeg);
+    background-image: url(../images/snow1.jpg);
     background-repeat: no-repeat;
     background-size:  cover;
     height: 700px;
@@ -20,7 +21,7 @@ body {
 }
 
 .mainimg:hover {
-    background-image: url(images/night.jpeg);
+    background-image: url(../images/night.jpeg);
     background-size: cover;
     height: 700px;
     width: 1140px;
