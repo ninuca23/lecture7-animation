@@ -14,9 +14,19 @@ body {
     position: relative;
     margin: 35px auto;
     overflow-x: hidden;
-    box-shadow: 1px 3px 15px 10px rgb(149, 149, 149);
+    box-shadow: 1px 3px 15px 10px rgb(109, 90, 90);
+    transition-duration: 2s;
 }
 
+.mainimg:hover {
+    background-image: url(/images/night.avif);
+    background-size: cover;
+    height: 700px;
+    width: 1140px;
+    filter: brightness(10%); 
+    transition-duration: 2s;
+    filter: opacity(1);
+}
 .snowflake img {
     position: absolute;
     top: -100px;
@@ -42,7 +52,6 @@ body {
     left: 35%;
     top: 100px;
     z-index: 5;
-    /* animation: moveAround 5s linear infinite; */
 }
 
 
@@ -70,7 +79,7 @@ body {
 
 .santa img {
     position: absolute;
-    width: 300px;
+    width: 400px;
     bottom: 400px;
     left: 0;
     animation: santamoving 10s  linear infinite;
@@ -106,9 +115,51 @@ body {
     
 }
 
+
 @keyframes movebox {
     50%
     {transform: rotate(10deg);}
     100% 
     {transform: translateX(0deg);}
 }
+
+
+.grinch img {
+    height: 300px;
+    position: absolute;
+    bottom: 0;
+    opacity: 0;
+    
+}
+
+
+
+.mainimg:hover .grinch img {
+    opacity: 0.8;
+    transition-duration: 5s;
+}
+
+.stars img {
+    width: 100px;
+    position: absolute;
+    right: 0;
+}
+
+
+.stars img {
+    position: absolute; 
+    opacity: 0;
+}
+
+.mainimg:hover .stars img {
+    opacity: 0.8;
+    transition-duration: 2s;
+    animation: fall 1s linear infinite;
+}
+
+@keyframes fall {
+    to {
+        transform: translate(-50vw, 50vh);
+    }
+}
+
