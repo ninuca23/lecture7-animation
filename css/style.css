@@ -108,10 +108,10 @@ body {
 }
 
 .newyear img {
-    width:150px;
+    width:200px;
     position: absolute;
-    top:60px;
-    left:-130px;
+    top:40px;
+    left:-180px;
     animation: newyearmove 10s  linear infinite;
 }
 
